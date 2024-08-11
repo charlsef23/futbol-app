@@ -1,18 +1,17 @@
-/* src/components/MatchesCalendar.css */
+/* src/components/Partidos.css */
 
-.calendar-container {
+.partidos-container {
   padding: 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.calendar-container h1 {
+.partidos-container h1 {
   font-size: 24px;
   margin-bottom: 20px;
 }
 
-.react-calendar {
-  max-width: 400px;
-  margin: 0 auto;
+.partidos-container table {
+  margin-top: 10px;
 }

@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Matches from './components/Matches';
-import Statistics from './components/Statistics';
+import Partidos from './components/Partidos';
+import EstadisticasEquipo from './components/EstadisticasEquipo';
+import EstadisticasJugador from './components/EstadisticasJugador';
 import News from './components/News';
 import MatchesCalendar from './components/MatchesCalendar';
 
@@ -10,8 +11,9 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/matches" element={<Matches />} />
-        <Route path="/statistics" element={<Statistics />} />
+        <Route path="/partidos" element={<Partidos />} />
+        <Route path="/estadisticas/equipo" element={<EstadisticasEquipo />} />
+        <Route path="/estadisticas/jugador" element={<EstadisticasJugador />} />
         <Route path="/news" element={<News />} />
         <Route path="/calendar" element={<MatchesCalendar />} />
       </Routes>

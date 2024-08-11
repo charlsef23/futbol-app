@@ -1,45 +1,27 @@
-/* News.css */
+/* src/components/News.css */
 
-form {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-  }
-  
-  button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-  }
-  
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    background: #fff;
-    padding: 10px;
-    margin-bottom: 5px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-  }
-  
-  h2 {
-    margin-top: 0;
-  }
+.news-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.news-container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.news-container li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.news-container li:last-child {
+  border-bottom: none;
+}

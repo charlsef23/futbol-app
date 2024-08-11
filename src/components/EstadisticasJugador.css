@@ -1,0 +1,13 @@
+/* src/components/EstadisticasJugador.css */
+
+.estadisticas-jugador-container {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .estadisticas-jugador-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }

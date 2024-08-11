@@ -1,39 +1,33 @@
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+// src/components/MatchesCalendar.js
+
+import React from 'react';
 import Calendar from 'react-calendar';
 import 'react-calendar/dist/Calendar.css';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+// src/components/MatchesCalendar.js
+import './MatchesCalendar.css';
 
-const MatchesCalendar = () => {
-  const [date, setDate] = useState(new Date());
-  const [matches, setMatches] = useState([]);
+function MatchesCalendar() {
+  const [, setPartidos] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost/backend/matches.php')
-      .then(res => setMatches(res.data))
-      .catch(err => console.error(err));
+    // Cargar partidos desde el backend
+    axios.get('/api/partidos')
+      .then(response => setPartidos(response.data))
+      .catch(error => console.error('Error cargando partidos:', error));
   }, []);
 
-  const events = matches.filter(match => new Date(match.date).toDateString() === date.toDateString());
+  // Lógica para marcar partidos en el calendario
 
   return (
-    <div className="calendar-container">
+    <div>
       <h1>Calendario de Partidos</h1>
       <Calendar
-        onChange={setDate}
-        value={date}
+        // Aquí puedes añadir lógica para marcar fechas de partidos
       />
-      <div className="events">
-        <h2>Partidos del {date.toDateString()}:</h2>
-        <ul>
-          {events.map((match) => (
-            <li key={match.id}>
-              {match.teams} - {match.score} ({match.status})
-            </li>
-          ))}
-        </ul>
-      </div>
     </div>
   );
-};
+}
 
 export default MatchesCalendar;
