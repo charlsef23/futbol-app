@@ -1,50 +1,38 @@
-// src/components/EstadisticasJugador.js
+// src/components/EstadisticasJugadores.js
+import React from 'react';
+import './EstadisticasJugadores.css';
 
-import React, { useEffect, useState } from 'react';
-import axios from 'axios';
-// src/components/EstadisticasJugador.js
-import './EstadisticasJugador.css';
-
-function EstadisticasJugador() {
-  const [estadisticas, setEstadisticas] = useState([]);
-
-  useEffect(() => {
-    axios.get('/api/estadisticas/jugador')
-      .then(response => setEstadisticas(response.data))
-      .catch(error => console.error('Error cargando estadísticas de jugador:', error));
-  }, []);
-
+const EstadisticasJugadores = () => {
   return (
-    <div>
+    <div className="estadisticas-jugadores">
       <h1>Estadísticas de Jugadores</h1>
       <table>
         <thead>
           <tr>
             <th>Nombre del Jugador</th>
+            <th>Equipo</th>
             <th>Partidos Jugados</th>
             <th>Goles</th>
             <th>Asistencias</th>
             <th>Tarjetas Amarillas</th>
             <th>Tarjetas Rojas</th>
-            <th>Minutos Jugados</th>
           </tr>
         </thead>
         <tbody>
-          {estadisticas.map(est => (
-            <tr key={est.id_estadisticas_jugador}>
-              <td>{est.nombre_jugador}</td>
-              <td>{est.partidos_jugados}</td>
-              <td>{est.goles}</td>
-              <td>{est.asistencias}</td>
-              <td>{est.tarjetas_amarillas}</td>
-              <td>{est.tarjetas_rojas}</td>
-              <td>{est.minutos_jugados}</td>
-            </tr>
-          ))}
+          <tr>
+            <td>Jugador A</td>
+            <td>Equipo A</td>
+            <td>10</td>
+            <td>8</td>
+            <td>5</td>
+            <td>2</td>
+            <td>0</td>
+          </tr>
+          {/* Añade más filas según sea necesario */}
         </tbody>
       </table>
     </div>
   );
-}
+};
 
-export default EstadisticasJugador;
+export default EstadisticasJugadores;

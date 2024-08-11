@@ -1,10 +1,11 @@
+import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
-import Partidos from './components/Partidos';
-import EstadisticasEquipo from './components/EstadisticasEquipo';
-import EstadisticasJugador from './components/EstadisticasJugador';
-import News from './components/News';
-import MatchesCalendar from './components/MatchesCalendar';
+import Partidos from './components/Partidos';  // Asegúrate de que este archivo exista
+import EstadisticasEquipos from './components/EstadisticasEquipos';
+import EstadisticasJugadores from './components/EstadisticasJugadores';
+import Noticias from './components/Noticias';
+import Calendario from './components/Calendario';
 
 function App() {
   return (
@@ -12,10 +13,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/partidos" element={<Partidos />} />
-        <Route path="/estadisticas/equipo" element={<EstadisticasEquipo />} />
-        <Route path="/estadisticas/jugador" element={<EstadisticasJugador />} />
-        <Route path="/news" element={<News />} />
-        <Route path="/calendar" element={<MatchesCalendar />} />
+        <Route path="/estadisticas-equipos" element={<EstadisticasEquipos />} />
+        <Route path="/estadisticas-jugadores" element={<EstadisticasJugadores />} />
+        <Route path="/noticias" element={<Noticias />} />
+        <Route path="/calendario" element={<Calendario />} />
       </Routes>
     </Router>
   );
