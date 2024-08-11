@@ -1,0 +1,13 @@
+.partidos {
+  padding: 20px;
+}
+
+.partidos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.partidos ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

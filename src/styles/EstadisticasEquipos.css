@@ -1,0 +1,13 @@
+.estadisticas-equipos {
+  padding: 20px;
+}
+
+.estadisticas-equipos ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.estadisticas-equipos ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

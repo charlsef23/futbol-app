@@ -1,0 +1,13 @@
+.estadisticas-jugadores {
+  padding: 20px;
+}
+
+.estadisticas-jugadores ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.estadisticas-jugadores ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

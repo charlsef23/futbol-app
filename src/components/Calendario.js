@@ -1,24 +1,24 @@
-// src/components/Calendario.js
-import React from 'react';
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
-import './Calendario.css';
+import React, { useState, useEffect } from 'react';
+import axios from 'axios';
+import '../styles/Calendario.css'; // Nota el cambio a '../styles/Calendario.css'
 
 const Calendario = () => {
+  const [partidos, setPartidos] = useState([]);
+
+  useEffect(() => {
+    axios.get('http://localhost:3002/api/partidos')
+      .then(response => setPartidos(response.data))
+      .catch(error => console.error('Error fetching partidos:', error));
+  }, []);
+
   return (
     <div className="calendario">
-      <h1>Calendario de Partidos</h1>
-      <div className="calendar-container">
-        <Calendar />
-      </div>
-      <div className="eventos">
-        <h2>Eventos Próximos</h2>
-        <ul>
-          <li>Partido 1 - Fecha</li>
-          <li>Partido 2 - Fecha</li>
-          {/* Añade más eventos según sea necesario */}
-        </ul>
-      </div>
+      <h2>Calendario de Partidos</h2>
+      <ul>
+        {partidos.map(partido => (
+          <li key={partido.id}>{partido.equipo_local_id} vs {partido.equipo_visitante_id} - {partido.fecha} - Resultado: {partido.resultado}</li>
+        ))}
+      </ul>
     </div>
   );
 };

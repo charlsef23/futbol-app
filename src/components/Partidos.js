@@ -1,45 +1,26 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-// src/components/Partidos.js
-import './Partidos.css';
+import '../styles/Partidos.css'; // Nota el cambio a '../styles/Partidos.css'
 
-function Partidos() {
+const Partidos = () => {
   const [partidos, setPartidos] = useState([]);
 
   useEffect(() => {
-    // Cargar partidos desde el backend
-    axios.get('/api/partidos')
+    axios.get('http://localhost:3002/api/partidos')
       .then(response => setPartidos(response.data))
-      .catch(error => console.error('Error cargando partidos:', error));
+      .catch(error => console.error('Error fetching partidos:', error));
   }, []);
 
   return (
-    <div>
-      <h1>Partidos</h1>
-      <table>
-        <thead>
-          <tr>
-            <th>Fecha</th>
-            <th>Equipo Local</th>
-            <th>Equipo Visitante</th>
-            <th>Goles Local</th>
-            <th>Goles Visitante</th>
-          </tr>
-        </thead>
-        <tbody>
-          {partidos.map(partido => (
-            <tr key={partido.id_partido}>
-              <td>{partido.fecha}</td>
-              <td>{partido.equipo_local}</td>
-              <td>{partido.equipo_visitante}</td>
-              <td>{partido.goles_local}</td>
-              <td>{partido.goles_visitante}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+    <div className="partidos">
+      <h2>Partidos</h2>
+      <ul>
+        {partidos.map(partido => (
+          <li key={partido.id}>{partido.equipo_local_id} vs {partido.equipo_visitante_id} - {partido.fecha} - Resultado: {partido.resultado}</li>
+        ))}
+      </ul>
     </div>
   );
-}
+};
 
 export default Partidos;

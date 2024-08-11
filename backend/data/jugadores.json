@@ -1,0 +1,14 @@
+[
+    {
+      "nombre": "Lionel Messi",
+      "edad": 34,
+      "dorsal": 10,
+      "equipo_id": 1
+    },
+    {
+      "nombre": "Cristiano Ronaldo",
+      "edad": 36,
+      "dorsal": 7,
+      "equipo_id": 2
+    }
+  ]

@@ -1,0 +1,13 @@
+.calendario {
+  padding: 20px;
+}
+
+.calendario ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.calendario ul li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}

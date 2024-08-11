@@ -1,0 +1,14 @@
+[
+  {
+    "equipo_local_id": 1,
+    "equipo_visitante_id": 2,
+    "fecha": "2024-08-15",
+    "resultado": "1-2"
+  },
+  {
+    "equipo_local_id": 2,
+    "equipo_visitante_id": 1,
+    "fecha": "2024-09-10",
+    "resultado": "0-0"
+  }
+]

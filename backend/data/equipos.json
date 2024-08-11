@@ -1,0 +1,137 @@
+[
+    {   "id": 1,
+        "nombre": "Athletic Club",
+        "pais": "España",
+        "ciudad": "Bilbao",
+        "estadio": "Estadio San Mamés",
+        "presidente": "Jon Uriarte",
+        "año de fundación": "1898"
+    },
+    {
+        "id": 2,
+        "nombre": "Atlético de Madrid",
+        "pais": "España",
+        "ciudad": "Madrid",
+        "estadio": "Civitas Metropolitano",
+        "presidente": "Enrique Cerezo Torres",
+        "año de fundación": "1903"
+    },
+    {
+        "id": 3,
+        "nombre": "Osasuna",
+        "pais": "España",
+        "ciudad": "Pamplona",
+        "estadio": "Estadio El Sadar",
+        "presidente": "Luis Sabalza",
+        "año de fundación": "1920"
+    },
+    {
+        "id": 4,
+        "nombre": "Leganés",
+        "pais": "España",
+        "ciudad": "Leganes",
+        "estadio": "Estadio Municipal Butarque",
+        "presidente": "Jeff Luhnow",
+        "año de fundación": "1928"
+    },
+    {
+        "id": 5,
+        "nombre": "Alavés",
+        "pais": "España",
+        "ciudad": "Vitoria-Gasteiz",
+        "estadio": "Mendizorroza",
+        "presidente": "Alfonso Fernández de Trocóniz",
+        "año de fundación": "1921"
+    },
+    {
+        "id": 6,
+        "nombre": "FC Barcelona",
+        "pais": "España",
+        "ciudad": "Barcelona",
+        "estadio": "Estadi Olimpic Lluís Companys",
+        "presidente": "Joan Laporta",
+        "año de fundación": "1899"
+    },
+    {
+        "id": 6,
+        "nombre": "Getafe",
+        "pais": "España",
+        "ciudad": "Getafe",
+        "estadio": "Coliseum",
+        "presidente": "Ángel Torres Sánchez",
+        "año de fundación": "1983"
+    },
+    {
+        "id": 7,
+        "nombre": "Girona",
+        "pais": "España",
+        "ciudad": "Girona",
+        "estadio": "Estadio Municipal de Montilivi",
+        "presidente": "Delfi Geli",
+        "año de fundación": "1930"
+    },
+    {
+        "id": 8,
+        "nombre": "Rayo Vallecano",
+        "pais": "España",
+        "ciudad": "Madrid",
+        "estadio": "Estadio de Vallecas",
+        "presidente": "Raúl Martín Presa",
+        "año de fundación": "1924"
+    },
+    {
+        "id": 9,
+        "nombre": "Celta",
+        "pais": "España",
+        "ciudad": "Vigo",
+        "estadio": "Estadio ABANCA Balaídos",
+        "presidente": "Marián Mouriño Terrazo",
+        "año de fundación": "1923"
+    },
+    {
+        "id": 10,
+        "nombre": "RCD Espanyol",
+        "pais": "España",
+        "ciudad": "Barcelona",
+        "estadio": "RCDE Stadium",
+        "presidente": "Chen Yansheng",
+        "año de fundación": "1900"
+    },
+    {
+        "id": 11,
+        "nombre": "RCD Mallorca",
+        "pais": "España",
+        "ciudad": "Mallorca",
+        "estadio": "Estadi Mallorca Son Moix",
+        "presidente": "Andy Kohlberg",
+        "año de fundación": "1916"
+    },
+    {
+        "id": 12,
+        "nombre": "Real Betis",
+        "pais": "España",
+        "ciudad": "Sevilla",
+        "estadio": "Estadio Benito Villamarín",
+        "presidente": "Ángel Haro García",
+        "año de fundación": "1907"
+    },
+    {
+        "id": 13,
+        "nombre": "Real Madrid CF",
+        "pais": "España",
+        "ciudad": "Madrid",
+        "estadio": "Estadio Santiago Bernabéu",
+        "presidente": "Florentino Pérez Rodriguez",
+        "año de fundación": "1902"
+    },
+    {
+        "id": 14,
+        "nombre": "Real Sociedad",
+        "pais": "España",
+        "ciudad": "Vigo",
+        "estadio": "Estadio ABANCA Balaídos",
+        "presidente": "Marián Mouriño Terrazo",
+        "año de fundación": "1923"
+    }
+ 
+  ]
