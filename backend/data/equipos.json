@@ -1,6 +1,7 @@
 [
     {   "id": 1,
         "nombre": "Athletic Club",
+        "escudo_url": "../src/Escudos/athletic.png",
         "pais": "España",
         "ciudad": "Bilbao",
         "estadio": "Estadio San Mamés",
@@ -10,6 +11,7 @@
     {
         "id": 2,
         "nombre": "Atlético de Madrid",
+        "escudo_url": "../src/Escudos/Atletico_de_madrid.png",
         "pais": "España",
         "ciudad": "Madrid",
         "estadio": "Civitas Metropolitano",
@@ -19,6 +21,7 @@
     {
         "id": 3,
         "nombre": "Osasuna",
+        "escudo_url": "../src/Escudos/osasuna.png",
         "pais": "España",
         "ciudad": "Pamplona",
         "estadio": "Estadio El Sadar",
@@ -28,6 +31,7 @@
     {
         "id": 4,
         "nombre": "Leganés",
+        "escudo_url": "../src/Escudos/leganes.png",
         "pais": "España",
         "ciudad": "Leganes",
         "estadio": "Estadio Municipal Butarque",
@@ -37,6 +41,7 @@
     {
         "id": 5,
         "nombre": "Alavés",
+        "escudo_url": "../src/Escudos/alaves.png",
         "pais": "España",
         "ciudad": "Vitoria-Gasteiz",
         "estadio": "Mendizorroza",
@@ -46,6 +51,7 @@
     {
         "id": 6,
         "nombre": "FC Barcelona",
+        "escudo_url": "../src/Escudos/barcelona.png",
         "pais": "España",
         "ciudad": "Barcelona",
         "estadio": "Estadi Olimpic Lluís Companys",
@@ -55,6 +61,7 @@
     {
         "id": 7,
         "nombre": "Getafe",
+        "escudo_url": "../src/Escudos/getafe.png",
         "pais": "España",
         "ciudad": "Getafe",
         "estadio": "Coliseum",
@@ -64,6 +71,7 @@
     {
         "id": 8,
         "nombre": "Girona",
+        "escudo_url": "../src/Escudos/girona.png",
         "pais": "España",
         "ciudad": "Girona",
         "estadio": "Estadio Municipal de Montilivi",
@@ -73,6 +81,7 @@
     {
         "id": 9,
         "nombre": "Rayo Vallecano",
+        "escudo_url": "../src/Escudos/rayo_vallecano.png",
         "pais": "España",
         "ciudad": "Madrid",
         "estadio": "Estadio de Vallecas",
@@ -82,6 +91,7 @@
     {
         "id": 10,
         "nombre": "Celta",
+        "escudo_url": "../src/Escudos/celta.png",
         "pais": "España",
         "ciudad": "Vigo",
         "estadio": "Estadio ABANCA Balaídos",
@@ -91,6 +101,7 @@
     {
         "id": 11,
         "nombre": "RCD Espanyol",
+        "escudo_url": "../src/Escudos/espanyol.png",
         "pais": "España",
         "ciudad": "Barcelona",
         "estadio": "RCDE Stadium",
@@ -100,6 +111,7 @@
     {
         "id": 12,
         "nombre": "RCD Mallorca",
+        "escudo_url": "../src/Escudos/mallorca.png",
         "pais": "España",
         "ciudad": "Mallorca",
         "estadio": "Estadi Mallorca Son Moix",
@@ -109,6 +121,7 @@
     {
         "id": 13,
         "nombre": "Real Betis",
+        "escudo_url": "../src/Escudos/betis.png",
         "pais": "España",
         "ciudad": "Sevilla",
         "estadio": "Estadio Benito Villamarín",
@@ -118,6 +131,7 @@
     {
         "id": 14,
         "nombre": "Real Madrid CF",
+        "escudo_url": "../src/Escudos/real_madrid.png",
         "pais": "España",
         "ciudad": "Madrid",
         "estadio": "Estadio Santiago Bernabéu",
@@ -127,6 +141,7 @@
     {
         "id": 15,
         "nombre": "Real Sociedad",
+        "escudo_url": "../src/Escudos/real-sociedad.png",
         "pais": "España",
         "ciudad": "Vigo",
         "estadio": "Estadio ABANCA Balaídos",
@@ -136,6 +151,7 @@
     {
         "id": 16,
         "nombre": "Real Valladolid CF",
+        "escudo_url": "../src/Escudos/Valladolid.png",
         "pais": "España",
         "ciudad": "Valladolid",
         "estadio": "Estadio Municipal José Zorrilla",
@@ -145,6 +161,7 @@
     {
         "id": 17,
         "nombre": "Sevilla CF",
+        "escudo_url": "../src/Escudos/sevilla.png",
         "pais": "España",
         "ciudad": "Sevilla",
         "estadio": "Ramón Sánchez-Pizjuán",
@@ -154,6 +171,7 @@
     {
         "id": 18,
         "nombre": "Las Palmas",
+        "escudo_url": "../src/Escudos/las-palmas.png",
         "pais": "España",
         "ciudad": "Las Palmas de Gran Canaria",
         "estadio": "Estadio Gran Canaria",
@@ -163,6 +181,7 @@
     {
         "id": 19,
         "nombre": "Valencia CF",
+        "escudo_url": "../src/Escudos/valencia.png",
         "pais": "España",
         "ciudad": "Valencia",
         "estadio": "Camp de Mestalla",
@@ -172,6 +191,7 @@
     {
         "id": 20,
         "nombre": "Villarreal CF",
+        "escudo_url": "../src/Escudos/villarreal.png",
         "pais": "España",
         "ciudad": "Villarreal",
         "estadio": "Estadio de la Cerámica",
