@@ -47,7 +47,7 @@ importData('./data/noticias.json', 'noticias', ['id', 'titulo', 'descripcion', '
 
 // Importar clasificación
 importData('./data/clasificacion.json', 'clasificacion', [
-  'id', 'equipo_id', 'partidos_jugados', 'partidos_ganados', 'partidos_empatados', 'partidos_perdidos', 'goles_a_favor', 'goles_en_contra', 'puntos'
+  'id', 'equipo_id', 'nombre', 'partidos_jugados', 'partidos_ganados', 'partidos_empatados', 'partidos_perdidos', 'goles_a_favor', 'goles_en_contra', 'puntos'
 ]);
 
 // Cerrar la conexión cuando todo esté hecho
