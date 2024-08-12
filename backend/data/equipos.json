@@ -132,6 +132,50 @@
         "estadio": "Estadio ABANCA Balaídos",
         "presidente": "Marián Mouriño Terrazo",
         "año de fundación": "1923"
+    },
+    {
+        "id": 15,
+        "nombre": "Real Valladolid CF",
+        "pais": "España",
+        "ciudad": "Valladolid",
+        "estadio": "Estadio Municipal José Zorrilla",
+        "presidente": "Ronaldo Nazário de Lima",
+        "año de fundación": "1928"
+    },
+    {
+        "id": 16,
+        "nombre": "Sevilla CF",
+        "pais": "España",
+        "ciudad": "Sevilla",
+        "estadio": "Ramón Sánchez-Pizjuán",
+        "presidente": "José María Del Nido Carrasco",
+        "año de fundación": "1905"
+    },
+    {
+        "id": 17,
+        "nombre": "Las Palmas",
+        "pais": "España",
+        "ciudad": "Las Palmas de Gran Canaria",
+        "estadio": "Estadio Gran Canaria",
+        "presidente": "Miguel Ángel Ramírez Alonso",
+        "año de fundación": "1949"
+    },
+    {
+        "id": 18,
+        "nombre": "Valecia CF",
+        "pais": "España",
+        "ciudad": "Valencia",
+        "estadio": "Camp de Mestalla",
+        "presidente": "Layhoon Chan",
+        "año de fundación": "1919"
+    },
+    {
+        "id": 19,
+        "nombre": "Villarreal CF",
+        "pais": "España",
+        "ciudad": "Villarreal",
+        "estadio": "Estadio de la Cerámica",
+        "presidente": "Fernando Roig Alfonso",
+        "año de fundación": "1923"
     }
- 
   ]
