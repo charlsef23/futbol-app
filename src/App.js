@@ -6,6 +6,7 @@ import EstadisticasEquipos from './components/EstadisticasEquipos';
 import EstadisticasJugadores from './components/EstadisticasJugadores';
 import Noticias from './components/Noticias';
 import Calendario from './components/Calendario';
+import Clasificacion from './components/Clasificacion';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/estadisticas-jugadores" element={<EstadisticasJugadores />} />
         <Route path="/noticias" element={<Noticias />} />
         <Route path="/calendario" element={<Calendario />} />
+        <Route path="/clasificacion" element={<Clasificacion />} />
       </Routes>
     </Router>
   );

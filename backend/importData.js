@@ -45,6 +45,11 @@ importData('./data/partidos.json', 'partidos', ['id', 'equipo_local_id', 'equipo
 // Importar noticias
 importData('./data/noticias.json', 'noticias', ['id', 'titulo', 'descripcion', 'fecha']);
 
+// Importar clasificación
+importData('./data/clasificacion.json', 'clasificacion', [
+  'id', 'equipo_id', 'partidos_jugados', 'partidos_ganados', 'partidos_empatados', 'partidos_perdidos', 'goles_a_favor', 'goles_en_contra', 'puntos'
+]);
+
 // Cerrar la conexión cuando todo esté hecho
 connection.end(() => {
   console.log('All data imported, connection closed.');

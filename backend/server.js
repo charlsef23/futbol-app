@@ -191,6 +191,41 @@ app.delete('/api/noticias/:id', (req, res) => {
   res.status(405).json({ error: 'Method not allowed' });
 });
 
+// Rutas para Clasificación
+app.get('/api/clasificacion', (req, res) => {
+  try {
+    const clasificacion = readJsonFile('clasificacion.json');
+    res.json(clasificacion);
+  } catch (error) {
+    res.status(500).json({ error: 'Error reading clasificacion data' });
+  }
+});
+
+app.post('/api/clasificacion', (req, res) => {
+  res.status(405).json({ error: 'Method not allowed' });
+});
+
+app.get('/api/clasificacion/:id', (req, res) => {
+  try {
+    const clasificacion = readJsonFile('clasificacion.json');
+    const equipo = clasificacion.find(e => e.id === parseInt(req.params.id));
+    if (!equipo) {
+      return res.status(404).json({ error: 'Equipo not found in clasificacion' });
+    }
+    res.json(equipo);
+  } catch (error) {
+    res.status(500).json({ error: 'Error reading clasificacion data' });
+  }
+});
+
+app.put('/api/clasificacion/:id', (req, res) => {
+  res.status(405).json({ error: 'Method not allowed' });
+});
+
+app.delete('/api/clasificacion/:id', (req, res) => {
+  res.status(405).json({ error: 'Method not allowed' });
+});
+
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
