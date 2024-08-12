@@ -3,18 +3,80 @@
     "id": 1,
     "equipo_local_id": "1",
     "equipo_visitante_id": "7",
-    "fecha": "2024-08-12T20:00:00Z",
-    "resultado": "2-1",
-    "ubicacion": "Estadio Local",
+    "fecha": "15/08/2024 19:00",
+    "resultado": "0-0",
     "estadio": "Estadio Nacional"
   },
   {
     "id": 2,
-    "equipo_local_id": "team3",
-    "equipo_visitante_id": "team4",
-    "fecha": "2024-08-13T20:00:00Z",
-    "resultado": "1-1",
-    "ubicacion": "Estadio Visitante",
+    "equipo_local_id": "13",
+    "equipo_visitante_id": "8",
+    "fecha": "15/08/2024 21:30",
+    "resultado": "0-0",
     "estadio": "Estadio Internacional"
+  },
+  {
+    "id": 3,
+    "equipo_local_id": "10",
+    "equipo_visitante_id": "5",
+    "fecha": "16/08/2024 19:00",
+    "resultado": "0-0",
+    "estadio": "Estadio Internacional"
+  },
+  {
+    "id": 4,
+    "equipo_local_id": "18",
+    "equipo_visitante_id": "17",
+    "fecha": "16/08/2024 21:30",
+    "resultado": "0-0",
+    "estadio": "Estadio Internacional"
+  },
+  {
+    "id": 5,
+    "equipo_local_id": "3",
+    "equipo_visitante_id": "4",
+    "fecha": "17/08/2024 19:00",
+    "resultado": "0-0",
+    "estadio": "Estadio El Sadar"
+  },
+  {
+    "id": 6,
+    "equipo_local_id": "19",
+    "equipo_visitante_id": "6",
+    "fecha": "17/08/2024 21:30",
+    "resultado": "0-0",
+    "estadio": "Camp de Mestalla"
+  },
+  {
+    "id": 7,
+    "equipo_local_id": "15",
+    "equipo_visitante_id": "9",
+    "fecha": "18/08/2024 19:00",
+    "resultado": "0-0",
+    "estadio": "Estadio ABANCA Balaídos"
+  },
+  {
+    "id": 8,
+    "equipo_local_id": "12",
+    "equipo_visitante_id": "14",
+    "fecha": "18/08/2024 21:30",
+    "resultado": "0-0",
+    "estadio": "Estadio Santiago Bernabéu"
+  },
+  {
+    "id": 9,
+    "equipo_local_id": "16",
+    "equipo_visitante_id": "11",
+    "fecha": "19/08/2024 19:00",
+    "resultado": "0-0",
+    "estadio": "Estadio Municipal José Zorrilla"
+  },
+  {
+    "id": 10,
+    "equipo_local_id": "20",
+    "equipo_visitante_id": "2",
+    "fecha": "19/08/2024 21:30",
+    "resultado": "0-0",
+    "estadio": "Estadio de la Cerámica"
   }
 ]
