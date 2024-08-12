@@ -1,13 +1,62 @@
 .partidos {
   padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.partidos ul {
+h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.error {
+  text-align: center;
+  font-size: 1.5rem;
+  color: red;
+}
+
+.partidos-list {
   list-style-type: none;
   padding: 0;
 }
 
-.partidos ul li {
-  padding: 10px;
-  border-bottom: 1px solid #ddd;
+.partido-item {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.partido-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.equipo-local, .equipo-visitante {
+  flex: 1;
+  text-align: center;
+}
+
+.vs {
+  font-weight: bold;
+}
+
+.partido-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #666;
 }

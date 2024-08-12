@@ -8,13 +8,12 @@ const Clasificacion = () => {
   useEffect(() => {
     fetch('http://localhost:3002/api/clasificacion')
       .then(response => response.json())
-      .then(data => setEquipos(data))
+      .then(data => {
+        console.log(data); // Verifica aquí la estructura de los datos
+        setEquipos(data);
+      })
       .catch(error => console.error('Error fetching data:', error));
   }, []);
-
-  const calcularDiferenciaGoles = (golesFavor, golesContra) => {
-    return golesFavor - golesContra;
-  };
 
   return (
     <div className="clasificacion-container">
@@ -45,7 +44,7 @@ const Clasificacion = () => {
               <td>{equipo.partidos_perdidos}</td>
               <td>{equipo.goles_a_favor}</td>
               <td>{equipo.goles_en_contra}</td>
-              <td>{calcularDiferenciaGoles(equipo.goles_a_favor, equipo.goles_en_contra)}</td>
+              <td>{equipo.goles_a_favor - equipo.goles_en_contra}</td>
               <td>{equipo.puntos}</td>
             </tr>
           ))}
