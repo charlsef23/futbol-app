@@ -40,7 +40,7 @@ importData('./data/estadisticas_equipos.json', 'estadisticas_equipos', [
 importData('./data/estadisticas_jugadores.json', 'estadisticas_jugadores', ['id', 'jugador_id', 'estadistica', 'valor']);
 
 // Importar partidos
-importData('./data/partidos.json', 'partidos', ['id', 'equipo_local_id', 'equipo_visitante_id', 'fecha', 'resultado']);
+importData('./data/partidos.json', 'partidos', ['id', 'equipo_local_id', 'escudos_url',  'equipo_visitante_id', 'fecha', 'resultado']);
 
 // Importar noticias
 importData('./data/noticias.json', 'noticias', ['id', 'titulo', 'descripcion', 'fecha']);

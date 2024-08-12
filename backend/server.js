@@ -9,6 +9,7 @@ const port = 3002;
 
 app.use(bodyParser.json());
 app.use(cors());
+app.use('/Escudos', express.static(path.join(__dirname, 'public/Escudos')));
 
 // Helper function to read JSON data from a file
 const readJsonFile = (filePath) => {
