@@ -1,7 +1,7 @@
 [
     {   "id": 1,
         "nombre": "Athletic Club",
-        "escudo_url": "../public/Escudos/1.png",
+        "escudo_url": "../public/escudos/1.png",
         "pais": "España",
         "ciudad": "Bilbao",
         "estadio": "Estadio San Mamés",
@@ -11,7 +11,7 @@
     {
         "id": 2,
         "nombre": "Atlético de Madrid",
-        "escudo_url": "../public/Escudos/2.png",
+        "escudo_url": "../public/escudos/2.png",
         "pais": "España",
         "ciudad": "Madrid",
         "estadio": "Civitas Metropolitano",
@@ -21,7 +21,7 @@
     {
         "id": 3,
         "nombre": "Osasuna",
-        "escudo_url": "../public/Escudos/3.png",
+        "escudo_url": "../public/escudos/3.png",
         "pais": "España",
         "ciudad": "Pamplona",
         "estadio": "Estadio El Sadar",
@@ -31,7 +31,7 @@
     {
         "id": 4,
         "nombre": "Leganés",
-        "escudo_url": "../public/Escudos/4.png",
+        "escudo_url": "../public/escudos/4.png",
         "pais": "España",
         "ciudad": "Leganes",
         "estadio": "Estadio Municipal Butarque",
@@ -41,7 +41,7 @@
     {
         "id": 5,
         "nombre": "Alavés",
-        "escudo_url": "../public/Escudos/5.png",
+        "escudo_url": "../public/escudos/5.png",
         "pais": "España",
         "ciudad": "Vitoria-Gasteiz",
         "estadio": "Mendizorroza",
@@ -51,7 +51,7 @@
     {
         "id": 6,
         "nombre": "FC Barcelona",
-        "escudo_url": "../public/Escudos/6.png",
+        "escudo_url": "../public/escudos/6.png",
         "pais": "España",
         "ciudad": "Barcelona",
         "estadio": "Estadi Olimpic Lluís Companys",
@@ -61,7 +61,7 @@
     {
         "id": 7,
         "nombre": "Getafe",
-        "escudo_url": "../public/Escudos/7.png",
+        "escudo_url": "../public/escudos/7.png",
         "pais": "España",
         "ciudad": "Getafe",
         "estadio": "Coliseum",
@@ -71,7 +71,7 @@
     {
         "id": 8,
         "nombre": "Girona",
-        "escudo_url": "../public/Escudos/8.png",
+        "escudo_url": "../public/escudos/8.png",
         "pais": "España",
         "ciudad": "Girona",
         "estadio": "Estadio Municipal de Montilivi",
@@ -81,7 +81,7 @@
     {
         "id": 9,
         "nombre": "Rayo Vallecano",
-        "escudo_url": "../public/Escudos/9.png",
+        "escudo_url": "../public/escudos/9.png",
         "pais": "España",
         "ciudad": "Madrid",
         "estadio": "Estadio de Vallecas",
@@ -91,7 +91,7 @@
     {
         "id": 10,
         "nombre": "Celta",
-        "escudo_url": "../public/Escudos/10.png",
+        "escudo_url": "../public/escudos/10.png",
         "pais": "España",
         "ciudad": "Vigo",
         "estadio": "Estadio ABANCA Balaídos",
@@ -101,7 +101,7 @@
     {
         "id": 11,
         "nombre": "RCD Espanyol",
-        "escudo_url": "../public/Escudos/11.png",
+        "escudo_url": "../public/escudos/11.png",
         "pais": "España",
         "ciudad": "Barcelona",
         "estadio": "RCDE Stadium",
@@ -111,7 +111,7 @@
     {
         "id": 12,
         "nombre": "RCD Mallorca",
-        "escudo_url": "../public/Escudos/12.png",
+        "escudo_url": "../public/escudos/12.png",
         "pais": "España",
         "ciudad": "Mallorca",
         "estadio": "Estadi Mallorca Son Moix",
@@ -121,7 +121,7 @@
     {
         "id": 13,
         "nombre": "Real Betis",
-        "escudo_url": "../public/Escudos/13.png",
+        "escudo_url": "../public/escudos/13.png",
         "pais": "España",
         "ciudad": "Sevilla",
         "estadio": "Estadio Benito Villamarín",
@@ -131,7 +131,7 @@
     {
         "id": 14,
         "nombre": "Real Madrid CF",
-        "escudo_url": "../public/Escudos/14.png",
+        "escudo_url": "../public/escudos/14.png",
         "pais": "España",
         "ciudad": "Madrid",
         "estadio": "Estadio Santiago Bernabéu",
@@ -141,7 +141,7 @@
     {
         "id": 15,
         "nombre": "Real Sociedad",
-        "escudo_url": "../public/Escudos/15.png",
+        "escudo_url": "../public/escudos/15.png",
         "pais": "España",
         "ciudad": "Vigo",
         "estadio": "Estadio ABANCA Balaídos",
@@ -151,7 +151,7 @@
     {
         "id": 16,
         "nombre": "Real Valladolid CF",
-        "escudo_url": "../public/Escudos/16.png",
+        "escudo_url": "../public/escudos/16.png",
         "pais": "España",
         "ciudad": "Valladolid",
         "estadio": "Estadio Municipal José Zorrilla",
@@ -161,7 +161,7 @@
     {
         "id": 17,
         "nombre": "Sevilla CF",
-        "escudo_url": "../public/Escudos/17.png",
+        "escudo_url": "../public/escudos/17.png",
         "pais": "España",
         "ciudad": "Sevilla",
         "estadio": "Ramón Sánchez-Pizjuán",
@@ -171,7 +171,7 @@
     {
         "id": 18,
         "nombre": "Las Palmas",
-        "escudo_url": "../public/Escudos/18.png",
+        "escudo_url": "../public/escudos/18.png",
         "pais": "España",
         "ciudad": "Las Palmas de Gran Canaria",
         "estadio": "Estadio Gran Canaria",
@@ -181,7 +181,7 @@
     {
         "id": 19,
         "nombre": "Valencia CF",
-        "escudo_url": "../public/Escudos/19.png",
+        "escudo_url": "../public/escudos/19.png",
         "pais": "España",
         "ciudad": "Valencia",
         "estadio": "Camp de Mestalla",
@@ -191,7 +191,7 @@
     {
         "id": 20,
         "nombre": "Villarreal CF",
-        "escudo_url": "../public/Escudos/20.png",
+        "escudo_url": "../public/escudos/20.png",
         "pais": "España",
         "ciudad": "Villarreal",
         "estadio": "Estadio de la Cerámica",

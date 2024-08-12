@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "equipo_local_id": "athletic",
-    "equipo_visitante_id": "getafe",
+    "equipo_local_id": "1",
+    "equipo_visitante_id": "7",
     "fecha": "2024-08-12T20:00:00Z",
     "resultado": "2-1",
     "ubicacion": "Estadio Local",

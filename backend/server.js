@@ -9,7 +9,9 @@ const port = 3002;
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/escudos', express.static(path.join(__dirname, 'public/Escudos'))); // Sirve los escudos de los equipos
+
+// Servir los escudos desde la carpeta pública fuera de 'backend'
+app.use('/escudos', express.static(path.join(__dirname, '../public/escudos')));
 
 // Helper function to read JSON data from a file
 const readJsonFile = (filePath) => {
