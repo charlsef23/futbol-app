@@ -1,64 +1,98 @@
+/* General */
 .partidos {
+  font-family: Arial, sans-serif;
   padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
+  background-color: #f4f4f4;
 }
 
 h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.loading {
-  text-align: center;
-  font-size: 1.5rem;
+  font-size: 24px;
   color: #333;
+  margin-bottom: 20px;
 }
 
-.error {
-  text-align: center;
-  font-size: 1.5rem;
-  color: red;
-}
-
+/* Contenedor de la lista de partidos */
 .partidos-list {
   list-style-type: none;
   padding: 0;
 }
 
 .partido-item {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  padding: 15px;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+  margin-bottom: 10px;
 }
 
+.partido-item:last-child {
+  border-bottom: none;
+}
+
+/* Detalles del partido */
 .partido-details {
   display: flex;
-  justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
-  margin-bottom: 10px;
+  flex-grow: 1;
+  justify-content: space-around;
+}
+
+.equipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .escudo {
   width: 50px;
   height: 50px;
-  object-fit: cover;
-  margin: 0 10px;
+  margin-bottom: 5px;
+  border-radius: 50%;
+}
+
+.nombre-equipo {
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
 }
 
 .vs {
+  font-size: 20px;
   font-weight: bold;
+  margin: 0 20px;
 }
 
+/* Información del partido */
 .partido-info {
   display: flex;
-  justify-content: space-between;
-  font-size: 1rem;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.fecha {
+  font-size: 14px;
   color: #666;
+}
+
+.resultado {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+/* Estados de carga y error */
+.loading, .error {
+  font-size: 18px;
+  color: #f00;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.error {
+  color: #f00;
+}
+
+.loading {
+  color: #00f;
 }

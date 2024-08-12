@@ -1,14 +1,20 @@
 [
   {
-    "equipo_local_id": 1,
-    "equipo_visitante_id": 2,
-    "fecha": "2024-08-15",
-    "resultado": "1-2"
+    "id": 1,
+    "equipo_local_id": "athletic",
+    "equipo_visitante_id": "getafe",
+    "fecha": "2024-08-12T20:00:00Z",
+    "resultado": "2-1",
+    "ubicacion": "Estadio Local",
+    "estadio": "Estadio Nacional"
   },
   {
-    "equipo_local_id": 2,
-    "equipo_visitante_id": 1,
-    "fecha": "2024-09-10",
-    "resultado": "0-0"
+    "id": 2,
+    "equipo_local_id": "team3",
+    "equipo_visitante_id": "team4",
+    "fecha": "2024-08-13T20:00:00Z",
+    "resultado": "1-1",
+    "ubicacion": "Estadio Visitante",
+    "estadio": "Estadio Internacional"
   }
 ]

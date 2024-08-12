@@ -9,13 +9,48 @@ const port = 3002;
 
 app.use(bodyParser.json());
 app.use(cors());
-app.use('/Escudos', express.static(path.join(__dirname, 'public/Escudos')));
+app.use('/escudos', express.static(path.join(__dirname, 'public/Escudos'))); // Sirve los escudos de los equipos
 
 // Helper function to read JSON data from a file
 const readJsonFile = (filePath) => {
   const fullPath = path.join(__dirname, 'data', filePath);
   return JSON.parse(fs.readFileSync(fullPath, 'utf-8'));
 };
+
+// Rutas para Partidos
+app.get('/api/partidos', (req, res) => {
+  try {
+    const partidos = readJsonFile('partidos.json');
+    res.json(partidos);
+  } catch (error) {
+    res.status(500).json({ error: 'Error reading partidos data' });
+  }
+});
+
+app.post('/api/partidos', (req, res) => {
+  res.status(405).json({ error: 'Method not allowed' });
+});
+
+app.get('/api/partidos/:id', (req, res) => {
+  try {
+    const partidos = readJsonFile('partidos.json');
+    const partido = partidos.find(p => p.id === parseInt(req.params.id));
+    if (!partido) {
+      return res.status(404).json({ error: 'Partido not found' });
+    }
+    res.json(partido);
+  } catch (error) {
+    res.status(500).json({ error: 'Error reading partidos data' });
+  }
+});
+
+app.put('/api/partidos/:id', (req, res) => {
+  res.status(405).json({ error: 'Method not allowed' });
+});
+
+app.delete('/api/partidos/:id', (req, res) => {
+  res.status(405).json({ error: 'Method not allowed' });
+});
 
 // Rutas para Equipos
 app.get('/api/equipos', (req, res) => {
@@ -119,41 +154,6 @@ app.put('/api/estadisticas-jugadores/:id', (req, res) => {
 });
 
 app.delete('/api/estadisticas-jugadores/:id', (req, res) => {
-  res.status(405).json({ error: 'Method not allowed' });
-});
-
-// Rutas para Partidos
-app.get('/api/partidos', (req, res) => {
-  try {
-    const partidos = readJsonFile('partidos.json');
-    res.json(partidos);
-  } catch (error) {
-    res.status(500).json({ error: 'Error reading partidos data' });
-  }
-});
-
-app.post('/api/partidos', (req, res) => {
-  res.status(405).json({ error: 'Method not allowed' });
-});
-
-app.get('/api/partidos/:id', (req, res) => {
-  try {
-    const partidos = readJsonFile('partidos.json');
-    const partido = partidos.find(p => p.id === parseInt(req.params.id));
-    if (!partido) {
-      return res.status(404).json({ error: 'Partido not found' });
-    }
-    res.json(partido);
-  } catch (error) {
-    res.status(500).json({ error: 'Error reading partidos data' });
-  }
-});
-
-app.put('/api/partidos/:id', (req, res) => {
-  res.status(405).json({ error: 'Method not allowed' });
-});
-
-app.delete('/api/partidos/:id', (req, res) => {
   res.status(405).json({ error: 'Method not allowed' });
 });
 

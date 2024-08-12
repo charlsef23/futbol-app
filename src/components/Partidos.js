@@ -30,17 +30,23 @@ const Partidos = () => {
         {partidos.map(partido => (
           <li key={partido.id} className="partido-item">
             <div className="partido-details">
-              <img 
-                src={`http://localhost:3002/images/${partido.equipo_local_id}.png`} 
-                alt={`Escudo ${partido.equipo_local_id}`} 
-                className="escudo" 
-              />
+              <div className="equipo">
+                <img 
+                  src={`http://localhost:3002/escudos/${partido.equipo_local_id}.png`} 
+                  alt={`Escudo ${partido.equipo_local_id}`} 
+                  className="escudo" 
+                />
+                <span className="nombre-equipo">{partido.equipo_local_nombre}</span>
+              </div>
               <span className="vs">vs</span>
-              <img 
-                src={`http://localhost:3002/images/${partido.equipo_visitante_id}.png`} 
-                alt={`Escudo ${partido.equipo_visitante_id}`} 
-                className="escudo" 
-              />
+              <div className="equipo">
+                <img 
+                  src={`http://localhost:3002/escudos/${partido.equipo_visitante_id}.png`} 
+                  alt={`Escudo ${partido.equipo_visitante_id}`} 
+                  className="escudo" 
+                />
+                <span className="nombre-equipo">{partido.equipo_visitante_nombre}</span>
+              </div>
             </div>
             <div className="partido-info">
               <span className="fecha">{partido.fecha}</span>
