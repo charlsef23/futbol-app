@@ -2,21 +2,201 @@
     {
       "equipo_id": 1,
       "temporada": "2023-2024",
-      "partidos_jugados": 38,
-      "partidos_ganados": 26,
-      "partidos_empatados": 8,
-      "partidos_perdidos": 4,
-      "goles_a_favor": 85,
-      "goles_en_contra": 30
+      "partidos_jugados": 0,
+      "partidos_ganados": 0,
+      "partidos_empatados": 0,
+      "partidos_perdidos": 0,
+      "goles_a_favor": 0,
+      "goles_en_contra": 0
     },
     {
-      "equipo_id": 2,
-      "temporada": "2023-2024",
-      "partidos_jugados": 38,
-      "partidos_ganados": 30,
-      "partidos_empatados": 5,
-      "partidos_perdidos": 3,
-      "goles_a_favor": 90,
-      "goles_en_contra": 25
+        "equipo_id": 2,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 3,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 4,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 5,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 6,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 7,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 8,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 9,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 10,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 11,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 12,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 13,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 14,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 15,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 16,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 17,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 18,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 19,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
+    },
+    {
+        "equipo_id": 20,
+        "temporada": "2023-2024",
+        "partidos_jugados": 0,
+        "partidos_ganados": 0,
+        "partidos_empatados": 0,
+        "partidos_perdidos": 0,
+        "goles_a_favor": 0,
+        "goles_en_contra": 0
     }
   ]
