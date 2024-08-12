@@ -33,7 +33,7 @@ const Partidos = () => {
               <div className="equipo">
                 <img 
                   src={`http://localhost:3002/escudos/${partido.equipo_local_id}.png`} 
-                  alt={`Escudo ${partido.equipo_local_id}`} 
+                  alt={`escudo ${partido.equipo_local_id}`} 
                   className="escudo" 
                 />
                 <span className="nombre-equipo">{partido.equipo_local_nombre}</span>
