@@ -47,14 +47,18 @@
   position: relative;
 }
 
-.selected {
-  background-color: #d1f0ff;
-  border-color: #3498db;
-}
-
-.empty {
+.calendar-day.empty {
   background-color: #f7f7f7;
   cursor: default;
+}
+
+.calendar-day.match-day {
+  background-color: #b3d9ff; /* Azul para días con partidos */
+}
+
+.calendar-day.selected {
+  background-color: #ffcccc; /* Rojo para el día seleccionado */
+  border-color: #ff0000; /* Borde rojo para el día seleccionado */
 }
 
 .partidos-del-dia {

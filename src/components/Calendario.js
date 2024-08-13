@@ -31,12 +31,14 @@ const Calendario = () => {
   const [partidosDelDia, setPartidosDelDia] = useState([]);
   const [diaSeleccionado, setDiaSeleccionado] = useState(null);
 
+  // Obtener los partidos desde el backend
   useEffect(() => {
     axios.get('http://localhost:3002/api/partidos')
       .then(response => setPartidos(response.data))
       .catch(error => console.error('Error fetching partidos:', error));
   }, []);
 
+  // Cambiar al mes anterior
   const handlePrevMonth = () => {
     setFechaSeleccionada(prev => {
       const newDate = new Date(prev.getFullYear(), prev.getMonth() - 1, 1);
@@ -44,6 +46,7 @@ const Calendario = () => {
     });
   };
 
+  // Cambiar al mes siguiente
   const handleNextMonth = () => {
     setFechaSeleccionada(prev => {
       const newDate = new Date(prev.getFullYear(), prev.getMonth() + 1, 1);
@@ -51,11 +54,13 @@ const Calendario = () => {
     });
   };
 
+  // Manejar la selección de un día
   const handleDayClick = (day) => {
     if (day) {
       const selectedDate = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), day);
       const partidosDelDia = partidos.filter(partido => {
-        const partidoDate = new Date(partido.fecha.split(' ')[0].split('/').reverse().join('-'));
+        const [day, month, year] = partido.fecha.split(' ')[0].split('/');
+        const partidoDate = new Date(`${year}-${month}-${day}`);
         return partidoDate.toDateString() === selectedDate.toDateString();
       });
       setPartidosDelDia(partidosDelDia);
@@ -63,6 +68,7 @@ const Calendario = () => {
     }
   };
 
+  // Generar los días del calendario
   const daysInMonth = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth() + 1, 0).getDate();
   const firstDay = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), 1).getDay();
   
@@ -78,6 +84,16 @@ const Calendario = () => {
   };
 
   const calendarDays = generateCalendarDays();
+
+  // Función para verificar si un día tiene partidos
+  const isMatchDay = (day) => {
+    const checkDate = new Date(fechaSeleccionada.getFullYear(), fechaSeleccionada.getMonth(), day);
+    return partidos.some(partido => {
+      const [partidoDay, partidoMonth, partidoYear] = partido.fecha.split(' ')[0].split('/');
+      const partidoDate = new Date(`${partidoYear}-${partidoMonth}-${partidoDay}`);
+      return partidoDate.toDateString() === checkDate.toDateString();
+    });
+  };
 
   return (
     <div className="calendario">
@@ -100,7 +116,7 @@ const Calendario = () => {
           {calendarDays.map((day, index) => (
             <div
               key={index}
-              className={`calendar-day ${day ? (day === diaSeleccionado ? 'selected' : '') : 'empty'}`}
+              className={`calendar-day ${day ? (day === diaSeleccionado ? 'selected' : isMatchDay(day) ? 'match-day' : '') : 'empty'}`}
               onClick={() => handleDayClick(day)}
             >
               {day}
