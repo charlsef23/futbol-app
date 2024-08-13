@@ -1,6 +1,29 @@
-// src/components/Clasificacion.js
 import React, { useEffect, useState } from 'react';
 import '../styles/Clasificacion.css';
+
+// Lista de nombres de los equipos y sus IDs (ajustar según los IDs reales de los escudos)
+const teamNames = {
+  "1": "Athletic Club",
+  "2": "Atlético de Madrid",
+  "3": "Osasuna",
+  "4": "Leganés",
+  "5": "Alavés",
+  "6": "FC Barcelona",
+  "7": "Getafe",
+  "8": "Girona",
+  "9": "Rayo Vallecano",
+  "10": "Celta",
+  "11": "RCD Espanyol",
+  "12": "RCD Mallorca",
+  "13": "Real Betis",
+  "14": "Real Madrid CF",
+  "15": "Real Sociedad",
+  "16": "Real Valladolid",
+  "17": "Sevilla CF",
+  "18": "Las Palmas",
+  "19": "Valencia CF",
+  "20": "Villarreal CF"
+};
 
 const Clasificacion = () => {
   const [equipos, setEquipos] = useState([]);
@@ -37,7 +60,14 @@ const Clasificacion = () => {
           {equipos.map((equipo, index) => (
             <tr key={equipo.id}>
               <td>{index + 1}</td>
-              <td>{equipo.nombre}</td>
+              <td className="equipo-col">
+                <img 
+                  src={`http://localhost:3002/escudos/${equipo.id}.png`} 
+                  alt={`escudo ${teamNames[equipo.id]}`} 
+                  className="escudo"
+                />
+                {teamNames[equipo.id]}
+              </td>
               <td>{equipo.partidos_jugados}</td>
               <td>{equipo.partidos_ganados}</td>
               <td>{equipo.partidos_empatados}</td>

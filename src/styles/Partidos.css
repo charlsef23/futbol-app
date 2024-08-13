@@ -1,40 +1,46 @@
-/* General */
 .partidos {
-  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 20px;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
-h2 {
-  font-size: 24px;
-  color: #333;
-  margin-bottom: 20px;
-}
-
-/* Contenedor de la lista de partidos */
 .partidos-list {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0;
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espacio entre celdas */
+  justify-content: center; /* Centrar celdas */
 }
 
 .partido-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  border: 1px solid #ddd;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  border-radius: 5px;
   background-color: #fff;
+  flex-basis: calc(50% - 10px); /* Dos celdas por fila */
+  min-height: 150px;
+  box-sizing: border-box;
+  text-align: center; /* Centrar texto */
+}
+
+.fecha-hora {
+  font-weight: bold;
   margin-bottom: 10px;
 }
 
-.partido-item:last-child {
-  border-bottom: none;
-}
-
-/* Detalles del partido */
 .partido-details {
   display: flex;
   align-items: center;
-  flex-grow: 1;
+  width: 100%;
   justify-content: space-around;
 }
 
@@ -42,57 +48,26 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 40%;
 }
 
 .escudo {
   width: 50px;
   height: 50px;
   margin-bottom: 5px;
-  border-radius: 50%;
 }
 
 .nombre-equipo {
-  font-size: 14px;
   font-weight: bold;
-  text-align: center;
-}
-
-.vs {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 0 20px;
-}
-
-/* Información del partido */
-.partido-info {
-  display: flex;
-  flex-direction: column;
-  margin-left: 20px;
-}
-
-.fecha {
-  font-size: 14px;
-  color: #666;
+  margin-bottom: 5px;
 }
 
 .resultado {
-  font-size: 16px;
-  font-weight: bold;
-  color: #000;
+  font-size: 1.2em;
+  margin-left: 10px;
 }
 
-/* Estados de carga y error */
-.loading, .error {
-  font-size: 18px;
-  color: #f00;
-  text-align: center;
-  margin-top: 20px;
-}
-
-.error {
-  color: #f00;
-}
-
-.loading {
-  color: #00f;
+.vs {
+  font-size: 1.2em;
+  margin: 0 15px;
 }

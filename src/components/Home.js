@@ -25,7 +25,7 @@ const Home = () => {
       {/* Navbar */}
       <nav className="navbar">
         <div className="navbar-logo">
-          <Link to="/">FútbolApp</Link>
+          <Link to="/">La Liga</Link>
         </div>
         <ul className="navbar-menu">
           <li><Link to="/partidos">Partidos</Link></li>
