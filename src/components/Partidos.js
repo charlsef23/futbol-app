@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import axios from 'axios';
-import '../styles/Partidos.css';
+import '../styles/Partidos.css'; // Asegúrate de que la ruta del CSS sea correcta
+import logo from '../assets/images/la_liga.png';
 
 const teamNames = {
   "1": "Athletic Club",
@@ -47,38 +49,56 @@ const Partidos = () => {
   if (error) return <div className="error">{error}</div>;
 
   return (
-    <div className="partidos">
-      <h2>Partidos</h2>
-      <ul className="partidos-list">
-        {partidos.map(partido => (
-          <li key={partido.id} className="partido-item">
-            <div className="fecha-hora">
-              {partido.fecha}
-            </div>
-            <div className="partido-details">
-              <div className="equipo equipo-local">
-                <img 
-                  src={`http://localhost:3002/escudos/${partido.equipo_local_id}.png`} 
-                  alt={`escudo ${teamNames[partido.equipo_local_id]}`} 
-                  className="escudo" 
-                />
-                <span className="nombre-equipo">{teamNames[partido.equipo_local_id]}</span>
-                <span className="resultado">{partido.resultado.split('-')[0]}</span>
+  <div>
+    <nav className="navbar">
+        <div className="navbar-logo">
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo-image" />
+          </Link>
+        </div>
+        <ul className="navbar-menu">
+          <li><Link to="/partidos">Partidos</Link></li>
+          <li><Link to="/clasificacion">Clasificación</Link></li>
+          <li><Link to="/estadisticas-equipos">Estadísticas Equipos</Link></li>
+          <li><Link to="/estadisticas-jugadores">Estadísticas Jugadores</Link></li>
+          <li><Link to="/noticias">Noticias</Link></li>
+          <li><Link to="/calendario">Calendario</Link></li>
+        </ul>
+      </nav>
+      {/* Contenido de Partidos */}
+      <div className="partidos">
+        <h2>Partidos</h2>
+        <ul className="partidos-list">
+          {partidos.map(partido => (
+            <li key={partido.id} className="partido-item">
+              <div className="fecha-hora">
+                {partido.fecha}
               </div>
-              <span className="vs">vs</span>
-              <div className="equipo equipo-visitante">
-                <img 
-                  src={`http://localhost:3002/escudos/${partido.equipo_visitante_id}.png`} 
-                  alt={`escudo ${teamNames[partido.equipo_visitante_id]}`} 
-                  className="escudo" 
-                />
-                <span className="nombre-equipo">{teamNames[partido.equipo_visitante_id]}</span>
-                <span className="resultado">{partido.resultado.split('-')[1]}</span>
+              <div className="partido-details">
+                <div className="equipo equipo-local">
+                  <img 
+                    src={`http://localhost:3002/escudos/${partido.equipo_local_id}.png`} 
+                    alt={`escudo ${teamNames[partido.equipo_local_id]}`} 
+                    className="escudo" 
+                  />
+                  <span className="nombre-equipo">{teamNames[partido.equipo_local_id]}</span>
+                  <span className="resultado">{partido.resultado.split('-')[0]}</span>
+                </div>
+                <span className="vs">vs</span>
+                <div className="equipo equipo-visitante">
+                  <img 
+                    src={`http://localhost:3002/escudos/${partido.equipo_visitante_id}.png`} 
+                    alt={`escudo ${teamNames[partido.equipo_visitante_id]}`} 
+                    className="escudo" 
+                  />
+                  <span className="nombre-equipo">{teamNames[partido.equipo_visitante_id]}</span>
+                  <span className="resultado">{partido.resultado.split('-')[1]}</span>
+                </div>
               </div>
-            </div>
-          </li>
-        ))}
-      </ul>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 };

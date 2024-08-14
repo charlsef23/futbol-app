@@ -1,3 +1,4 @@
+/* Estilos para la sección de partidos */
 .partidos {
   display: flex;
   flex-direction: column;
@@ -70,4 +71,18 @@
 .vs {
   font-size: 1.2em;
   margin: 0 15px;
+}
+
+/* Clases adicionales para el estado de carga y error */
+.loading {
+  font-size: 1.5em;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.error {
+  color: red;
+  font-size: 1.2em;
+  text-align: center;
+  margin-top: 50px;
 }

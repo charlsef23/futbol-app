@@ -1,4 +1,7 @@
+/* eslint-disable react/jsx-no-comment-textnodes */
+/* eslint-disable react/jsx-no-undef */
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'; 
 import '../styles/Clasificacion.css';
 
 // Lista de nombres de los equipos y sus IDs (ajustar según los IDs reales de los escudos)
@@ -39,6 +42,23 @@ const Clasificacion = () => {
   }, []);
 
   return (
+  <div className="home">
+    {/* Navbar */}
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <Link to="/">La Liga</Link>
+      </div>
+      <ul className="navbar-menu">
+        <li><Link to="/partidos">Partidos</Link></li>
+        <li><Link to="/clasificacion">Clasificación</Link></li>
+        <li><Link to="/estadisticas-equipos">Estadísticas Equipos</Link></li>
+        <li><Link to="/estadisticas-jugadores">Estadísticas Jugadores</Link></li>
+        <li><Link to="/noticias">Noticias</Link></li>
+        <li><Link to="/calendario">Calendario</Link></li>
+      </ul>
+    </nav>
+
+    {/* Clasificacion */}
     <div className="clasificacion-container">
       <h1>Clasificación de Equipos</h1>
       <table className="clasificacion-table">
@@ -81,6 +101,7 @@ const Clasificacion = () => {
         </tbody>
       </table>
     </div>
+  </div>
   );
 };
 

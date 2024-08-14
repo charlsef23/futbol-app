@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Home.css';
+import logo from '../assets/images/la_liga.png';
+
 
 const Home = () => {
   const [partidos, setPartidos] = useState([]);
@@ -25,7 +27,9 @@ const Home = () => {
       {/* Navbar */}
       <nav className="navbar">
         <div className="navbar-logo">
-          <Link to="/">La Liga</Link>
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo-image" />
+          </Link>
         </div>
         <ul className="navbar-menu">
           <li><Link to="/partidos">Partidos</Link></li>
@@ -66,8 +70,8 @@ const Home = () => {
           ))}
         </div>
       </section>
-    </div>
-  );
+    </div> 
+);
 };
 
 export default Home;
