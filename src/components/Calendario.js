@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import '../styles/Calendario.css'; // Asegúrate de que la ruta es correcta
+import logo from '../assets/images/la_liga.png';
 
 const teamNames = {
   "1": "Athletic Club",
@@ -96,6 +98,24 @@ const Calendario = () => {
   };
 
   return (
+
+    <div className="home">
+    {/* Navbar */}
+    <nav className="navbar">
+    <div className="navbar-logo">
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo-image" />
+          </Link>
+        </div>
+      <ul className="navbar-menu">
+        <li><Link to="/partidos">Partidos</Link></li>
+        <li><Link to="/clasificacion">Clasificación</Link></li>
+        <li><Link to="/estadisticas-equipos">Estadísticas Equipos</Link></li>
+        <li><Link to="/estadisticas-jugadores">Estadísticas Jugadores</Link></li>
+        <li><Link to="/noticias">Noticias</Link></li>
+        <li><Link to="/calendario">Calendario</Link></li>
+      </ul>
+    </nav>
     <div className="calendario">
       <div className="calendar-header">
         <button className="nav-button" onClick={handlePrevMonth}>←</button>
@@ -161,6 +181,7 @@ const Calendario = () => {
         )}
       </div>
     </div>
+  </div>
   );
 };
 

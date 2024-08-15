@@ -1,7 +1,8 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 /* eslint-disable react/jsx-no-undef */
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; 
+import { Link } from 'react-router-dom';
+import logo from '../assets/images/la_liga.png';
 import '../styles/Clasificacion.css';
 
 // Lista de nombres de los equipos y sus IDs (ajustar según los IDs reales de los escudos)
@@ -45,9 +46,11 @@ const Clasificacion = () => {
   <div className="home">
     {/* Navbar */}
     <nav className="navbar">
-      <div className="navbar-logo">
-        <Link to="/">La Liga</Link>
-      </div>
+    <div className="navbar-logo">
+          <Link to="/">
+            <img src={logo} alt="logo" className="logo-image" />
+          </Link>
+        </div>
       <ul className="navbar-menu">
         <li><Link to="/partidos">Partidos</Link></li>
         <li><Link to="/clasificacion">Clasificación</Link></li>

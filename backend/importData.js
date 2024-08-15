@@ -28,16 +28,10 @@ const importData = (filePath, tableName, columns) => {
 // Importar equipos
 importData('./data/equipos.json', 'equipos', ['id', 'nombre', 'pais', 'ciudad', 'estadio']);
 
-// Importar jugadores
-importData('./data/jugadores.json', 'jugadores', ['id', 'nombre', 'edad', 'dorsal', 'equipo_id']);
-
 // Importar estadísticas de equipos
 importData('./data/estadisticas_equipos.json', 'estadisticas_equipos', [
   'id', 'equipo_id', 'partidos_jugados', 'partidos_ganados', 'partidos_empatados', 'partidos_perdidos', 'goles_a_favor', 'goles_en_contra'
 ]);
-
-// Importar estadísticas de jugadores
-importData('./data/estadisticas_jugadores.json', 'estadisticas_jugadores', ['id', 'jugador_id', 'estadistica', 'valor']);
 
 // Importar partidos
 importData('./data/partidos.json', 'partidos', ['id', 'equipo_local_id', 'equipo_visitante_id', 'fecha', 'resultado', 'estadio']);
