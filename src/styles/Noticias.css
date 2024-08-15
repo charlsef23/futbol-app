@@ -1,74 +1,84 @@
-/* Noticias.css */
-
-/* Contenedor principal de noticias */
+/* Estilos para la página de noticias */
 .noticias {
-  padding: 40px;
-  background-color: #f0f2f5;
+  padding: 20px;
+  background-color: #f4f4f9;
+  min-height: 100vh;
 }
 
-/* Título principal */
 .noticias h1 {
-  font-size: 2.5em;
-  margin-bottom: 30px;
-  text-align: center;
+  font-size: 2em;
   color: #333;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
-/* Diseño de cuadrícula para las tarjetas de noticias */
 .noticias-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  justify-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-/* Estilo de las tarjetas individuales de noticias */
 .noticia-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  max-width: 350px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Título de la noticia dentro de la tarjeta */
+.noticia-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
 .noticia-card h2 {
-  font-size: 1.75em;
-  margin-bottom: 15px;
-  color: #2c3e50;
+  font-size: 1.5em;
+  color: #333;
+  padding: 16px;
+  margin: 0;
+  border-bottom: 1px solid #eee;
 }
 
-/* Descripción de la noticia dentro de la tarjeta */
 .noticia-card p {
-  flex-grow: 1;
-  color: #606060;
-  margin-bottom: 15px;
+  font-size: 1em;
+  color: #666;
+  padding: 16px;
+  margin: 0;
 }
 
-/* Pie de la tarjeta que contiene la fecha y el enlace */
 .noticia-footer {
+  padding: 16px;
+  border-top: 1px solid #eee;
+  background-color: #f9f9f9;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-/* Estilo de la fecha en el pie de la tarjeta */
 .noticia-footer span {
-  color: #a0a0a0;
   font-size: 0.9em;
+  color: #999;
 }
 
-/* Estilo del enlace "Leer más" */
 .leer-mas {
+  font-size: 0.9em;
   color: #007bff;
   text-decoration: none;
-  font-weight: 600;
+  transition: color 0.3s ease;
 }
 
 .leer-mas:hover {
+  color: #0056b3;
   text-decoration: underline;
+}
+
+/* Estilos adicionales en Noticias.css */
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
 }
