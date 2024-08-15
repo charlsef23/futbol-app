@@ -89,41 +89,6 @@ app.delete('/api/equipos/:id', (req, res) => {
   res.status(405).json({ error: 'Method not allowed' });
 });
 
-// Rutas para Noticias
-app.get('/api/noticias', (req, res) => {
-  try {
-    const noticias = readJsonFile('noticias.json');
-    res.json(noticias);
-  } catch (error) {
-    res.status(500).json({ error: 'Error reading noticias data' });
-  }
-});
-
-app.post('/api/noticias', (req, res) => {
-  res.status(405).json({ error: 'Method not allowed' });
-});
-
-app.get('/api/noticias/:id', (req, res) => {
-  try {
-    const noticias = readJsonFile('noticias.json');
-    const noticia = noticias.find(n => n.id === parseInt(req.params.id));
-    if (!noticia) {
-      return res.status(404).json({ error: 'Noticia not found' });
-    }
-    res.json(noticia);
-  } catch (error) {
-    res.status(500).json({ error: 'Error reading noticias data' });
-  }
-});
-
-app.put('/api/noticias/:id', (req, res) => {
-  res.status(405).json({ error: 'Method not allowed' });
-});
-
-app.delete('/api/noticias/:id', (req, res) => {
-  res.status(405).json({ error: 'Method not allowed' });
-});
-
 // Rutas para Clasificación
 app.get('/api/clasificacion', (req, res) => {
   try {

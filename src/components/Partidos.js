@@ -59,7 +59,6 @@ const Partidos = () => {
         <ul className="navbar-menu">
           <li><Link to="/partidos">Partidos</Link></li>
           <li><Link to="/clasificacion">Clasificación</Link></li>
-          <li><Link to="/estadisticas-equipos">Estadísticas Equipos</Link></li>
           <li><Link to="/noticias">Noticias</Link></li>
           <li><Link to="/calendario">Calendario</Link></li>
         </ul>

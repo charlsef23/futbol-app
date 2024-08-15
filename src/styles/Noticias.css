@@ -1,84 +1,19 @@
-/* Estilos para la página de noticias */
-.noticias {
+/* src/styles/Noticias.css */
+
+.noticias-container {
   padding: 20px;
-  background-color: #f4f4f9;
-  min-height: 100vh;
+  background-color: #f4f4f4;
 }
 
-.noticias h1 {
-  font-size: 2em;
-  color: #333;
+.noticias-title {
   text-align: center;
+  color: #333;
   margin-bottom: 20px;
 }
 
 .noticias-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.noticia-card {
-  background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.noticia-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
-}
-
-.noticia-card h2 {
-  font-size: 1.5em;
-  color: #333;
-  padding: 16px;
-  margin: 0;
-  border-bottom: 1px solid #eee;
-}
-
-.noticia-card p {
-  font-size: 1em;
-  color: #666;
-  padding: 16px;
-  margin: 0;
-}
-
-.noticia-footer {
-  padding: 16px;
-  border-top: 1px solid #eee;
-  background-color: #f9f9f9;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.noticia-footer span {
-  font-size: 0.9em;
-  color: #999;
-}
-
-.leer-mas {
-  font-size: 0.9em;
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.leer-mas:hover {
-  color: #0056b3;
-  text-decoration: underline;
-}
-
-/* Estilos adicionales en Noticias.css */
-
-.error-message {
-  color: red;
-  font-weight: bold;
-  text-align: center;
-  margin: 20px 0;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }

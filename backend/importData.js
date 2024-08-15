@@ -42,7 +42,7 @@ const importData = async (filePath, tableName, columns) => {
       'id', 'equipo_id', 'partidos_jugados', 'partidos_ganados', 'partidos_empatados', 'partidos_perdidos', 'goles_a_favor', 'goles_en_contra'
     ]);
     await importData('./data/partidos.json', 'partidos', ['id', 'equipo_local_id', 'equipo_visitante_id', 'fecha', 'resultado', 'estadio']);
-    await importData('./data/noticias.json', 'noticias', ['id', 'titulo', 'descripcion', 'fecha']);
+  
     await importData('./data/clasificacion.json', 'clasificacion', [
       'id', 'equipo_id', 'nombre', 'partidos_jugados', 'partidos_ganados', 'partidos_empatados', 'partidos_perdidos', 'goles_a_favor', 'goles_en_contra', 'puntos'
     ]);

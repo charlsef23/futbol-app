@@ -1,34 +1,27 @@
-import React, { useState, useEffect } from 'react';
+// src/components/Noticias.js
+
+import React from 'react';
+import NoticiaCard from './NoticiaCard';
+import '../styles/Noticias.css'; // Asegúrate de tener este archivo CSS
 import { Link } from 'react-router-dom';
 import logo from '../assets/images/la_liga.png';
-import '../styles/Noticias.css';
+
+const noticiasData = [
+  {
+    id: 1,
+    titulo: "Lamine Yamal visita a su padre y comprueba su mejoría tras la agresión",
+    descripcion: "No acudió antes por recomendación del centro hospitalario",
+    fecha: "2024-08-15"
+  },
+  {
+    id: 2,
+    titulo: "Noticia 2",
+    descripcion: "Descripción de la noticia 2",
+    fecha: "2024-08-11"
+  }
+];
 
 const Noticias = () => {
-  const [noticias, setNoticias] = useState([]);
-  const [error, setError] = useState(null);
-
-  useEffect(() => {
-    // Fetch de todas las noticias
-    fetch('/api/noticias')
-      .then(res => {
-        if (!res.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return res.json();
-      })
-      .then(data => {
-        if (Array.isArray(data)) {
-          setNoticias(data);
-        } else {
-          throw new Error('Data is not an array');
-        }
-      })
-      .catch(err => {
-        console.error('Error fetching noticias:', err);
-        setError('No se pudo cargar las noticias.');
-      });
-  }, []);
-
   return (
     <div className="home">
       {/* Navbar */}
@@ -41,33 +34,23 @@ const Noticias = () => {
         <ul className="navbar-menu">
           <li><Link to="/partidos">Partidos</Link></li>
           <li><Link to="/clasificacion">Clasificación</Link></li>
-          <li><Link to="/estadisticas-equipos">Estadísticas Equipos</Link></li>
           <li><Link to="/noticias">Noticias</Link></li>
           <li><Link to="/calendario">Calendario</Link></li>
         </ul>
       </nav>
-      <div className='noticias'>
-      {/* Contenido de noticias */}
-      <div className="noticias-content">
-        <h1>Noticias</h1>
-        {error && <p className="error-message">{error}</p>}
-        {noticias.length ? (
-          <div className="noticias-grid">
-            {noticias.map((noticia) => (
-              <div className="noticia-card" key={noticia.id}>
-                <h2>{noticia.titulo}</h2>
-                <p>{noticia.descripcion}</p>
-                <div className="noticia-footer">
-                  <span>{new Date(noticia.fecha).toLocaleDateString()}</span>
-                  <Link to={`/noticias/${noticia.id}`} className="leer-mas">Leer más</Link>
-                </div>
-              </div>
-            ))}
-          </div>
+    <div className='noticias'>
+    <div className="noticias-container">
+      <h1 className="noticias-title">Noticias</h1>
+      <div className="noticias-grid">
+        {noticiasData.length > 0 ? (
+          noticiasData.map((noticia) => (
+            <NoticiaCard key={noticia.id} noticia={noticia} />
+          ))
         ) : (
-          <p>No hay noticias disponibles.</p>
+          <p className="no-news">No hay noticias disponibles.</p>
         )}
       </div>
+    </div>
     </div>
     </div>
   );
