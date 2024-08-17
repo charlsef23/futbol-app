@@ -3,7 +3,7 @@
     "id": 1,
     "equipo_local_id": "1",
     "equipo_visitante_id": "7",
-    "fecha": "15/08/2024 19:00",
+    "fecha": "Finalizado",
     "resultado": "1-1",
     "estadio": "Estadio San Mamés"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "equipo_local_id": "13",
     "equipo_visitante_id": "8",
-    "fecha": "15/08/2024 21:30",
+    "fecha": "Finalizado",
     "resultado": "1-1",
     "estadio": "Estadio Benito Villamarín"
   },
@@ -19,32 +19,32 @@
     "id": 3,
     "equipo_local_id": "10",
     "equipo_visitante_id": "5",
-    "fecha": "16/08/2024 19:00",
-    "resultado": "0-0",
+    "fecha": "Finalizado",
+    "resultado": "2-1",
     "estadio": "Estadio ABANCA Balaídos"
   },
   {
     "id": 4,
     "equipo_local_id": "18",
     "equipo_visitante_id": "17",
-    "fecha": "16/08/2024 21:30",
-    "resultado": "0-0",
+    "fecha": "Finalizado",
+    "resultado": "2-2",
     "estadio": "Estadio Gran Canaria"
   },
   {
     "id": 5,
     "equipo_local_id": "3",
     "equipo_visitante_id": "4",
-    "fecha": "17/08/2024 19:00",
-    "resultado": "0-0",
+    "fecha": "Finalizado",
+    "resultado": "1-1",
     "estadio": "Estadio El Sadar"
   },
   {
     "id": 6,
     "equipo_local_id": "19",
     "equipo_visitante_id": "6",
-    "fecha": "17/08/2024 21:30",
-    "resultado": "0-0",
+    "fecha": "Finalizado",
+    "resultado": "1-2",
     "estadio": "Camp de Mestalla"
   },
   {
